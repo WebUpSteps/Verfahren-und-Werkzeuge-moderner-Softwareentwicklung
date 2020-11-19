@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kalender">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/anschauen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Eingaben verändern" />
+
+            <TextView
+                android:id="@+id/viewTagesuebersicht"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:text="Tagesübersicht"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewNettostundenTag"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewSpesenpauschaleTag"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewKmTag"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewMonatsuebersicht"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:text="Monatsübersicht"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewNettostunden"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewSpesenpauschaleMonat"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewKmMonat"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/viewJahresuebersicht"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:text="Jahresübersicht"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewJahresUrlaub"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

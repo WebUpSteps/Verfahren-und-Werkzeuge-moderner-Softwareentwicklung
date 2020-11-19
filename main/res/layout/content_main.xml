@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE android.support.constraint.ConstraintLayout >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.oko.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:id="@+id/ende_button"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:text="Fahrt Ende"
+        app:layout_constraintBottom_toTopOf="@+id/arbeitstagBeenden"
+        app:layout_constraintEnd_toStartOf="@+id/FahrtEndeTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fahreLos" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:text="Beginn"
+        app:layout_constraintBottom_toTopOf="@+id/fahreLos"
+        app:layout_constraintEnd_toStartOf="@+id/ArbeitstagBeginntextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tachostandView" />
+
+    <TextView
+        android:id="@+id/ArbeitstagBeginntextView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fahreLosTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/start_button"
+        app:layout_constraintTop_toBottomOf="@+id/editKmVormStart" />
+
+    <TextView
+        android:id="@+id/FahrtEndeTextView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/arbeitstagBeendenTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ende_button"
+        app:layout_constraintTop_toBottomOf="@+id/fahreLosTextView" />
+
+    <EditText
+        android:id="@+id/editKmVormStart"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/ArbeitstagBeginntextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tachostandView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tachostandView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingTop="13dp"
+        android:text="Hier Tachostand eintragen:"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toStartOf="@+id/editKmVormStart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fahreLos"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Fahre los"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ende_button"
+        app:layout_constraintEnd_toStartOf="@+id/fahreLosTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button" />
+
+    <Button
+        android:id="@+id/arbeitstagBeenden"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Arbeitstag beenden"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arbeitstagBeendenTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ende_button" />
+
+    <TextView
+        android:id="@+id/fahreLosTextView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/FahrtEndeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fahreLos"
+        app:layout_constraintTop_toBottomOf="@+id/ArbeitstagBeginntextView" />
+
+    <TextView
+        android:id="@+id/arbeitstagBeendenTextView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/arbeitstagBeenden"
+        app:layout_constraintTop_toBottomOf="@+id/FahrtEndeTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

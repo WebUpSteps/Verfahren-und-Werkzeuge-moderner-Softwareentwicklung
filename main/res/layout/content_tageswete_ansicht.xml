@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewArbeitsbeginn"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Arbeitsbeginn um:"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/editArbeitsbeginnTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/viewFuhrlosKm"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Tachostand vor der Fahrt:" />
+
+        <EditText
+            android:id="@+id/editFuhrlosKmTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/viewFuhrlosUm"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Fuhr los um:" />
+
+        <EditText
+            android:id="@+id/editFuhrlosUmTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/viewArbeitsendeBeiAnkunft"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Wieder zuhause um:" />
+
+        <EditText
+            android:id="@+id/editArbeitsendeBeiAnkunftTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/viewArbeitsendeKm"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Tachostand am Ende der Tagesfahrten:" />
+
+        <EditText
+            android:id="@+id/editArbeitsendeKmTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/viewArbeitsendeZuhause"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Zuhause weiter gearbeitet bis:" />
+
+        <EditText
+            android:id="@+id/editArbeitsendeZuhauseTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/viewOrt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Einsatzort:"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/editOrtTageswert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/viewPauseInnerhalbGleitzeit"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Pause innerhalb der Gleitzeit:" />
+
+        <EditText
+            android:id="@+id/editPauseInnerhalbGleitzeit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/viewPauseAusserhalbGleitzeit"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:text="Pause ausserhalb der Gleitzeit:" />
+
+        <EditText
+            android:id="@+id/editPauseAusserhalbGleitzeit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal" />
+
+        <CheckBox
+            android:id="@+id/Urlaubstag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urlaubstag" />
+
+        <CheckBox
+            android:id="@+id/Feiertag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feiertag" />
+
+        <CheckBox
+            android:id="@+id/Krankheitstag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krankheitstag" />
+
+    </LinearLayout>
+
+</ScrollView>
