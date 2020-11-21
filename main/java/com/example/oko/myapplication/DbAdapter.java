@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.util.Log;
 
-
+//Test Änderung
 import androidx.annotation.RequiresApi;
 
 /**
